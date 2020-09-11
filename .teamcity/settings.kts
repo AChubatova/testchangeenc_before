@@ -54,4 +54,8 @@ object BuildConfig : BuildType({
 
 object ConfigAfter : BuildType({
     name = "config_after"
+
+    params {
+        password("parAfter", "credentialsJSON:23fe38f4-6f2d-41e9-b5f0-d56f410bf391")
+    }
 })
