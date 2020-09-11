@@ -27,6 +27,7 @@ version = "2020.1"
 
 project {
 
+    buildType(BuildConfigFromTemplate)
     buildType(BuildConfig)
     buildType(ConfigAfter)
 
@@ -52,6 +53,10 @@ object BuildConfig : BuildType({
     vcs {
         root(DslContext.settingsRoot)
     }
+})
+
+object BuildConfigFromTemplate : BuildType({
+    name = "build config from template"
 })
 
 object ConfigAfter : BuildType({
