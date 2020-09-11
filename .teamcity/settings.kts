@@ -27,6 +27,7 @@ version = "2020.1"
 
 project {
 
+    buildType(SecondeBuildConfigFromTemplate)
     buildType(BuildConfigFromTemplate)
     buildType(BuildConfig)
     buildType(ConfigAfter)
@@ -65,6 +66,11 @@ object ConfigAfter : BuildType({
     params {
         password("parAfter", "credentialsJSON:23fe38f4-6f2d-41e9-b5f0-d56f410bf391")
     }
+})
+
+object SecondeBuildConfigFromTemplate : BuildType({
+    templates(Template_1)
+    name = "seconde build config from template"
 })
 
 object Template_1 : Template({
