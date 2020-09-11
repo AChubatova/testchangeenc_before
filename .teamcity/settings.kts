@@ -30,6 +30,8 @@ project {
     buildType(BuildConfig)
     buildType(ConfigAfter)
 
+    template(Template_1)
+
     features {
         bitbucketCloudConnection {
             id = "PROJECT_EXT_2"
@@ -58,4 +60,9 @@ object ConfigAfter : BuildType({
     params {
         password("parAfter", "credentialsJSON:23fe38f4-6f2d-41e9-b5f0-d56f410bf391")
     }
+})
+
+object Template_1 : Template({
+    id("Template")
+    name = "template"
 })
