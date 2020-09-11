@@ -35,7 +35,7 @@ project {
             id = "PROJECT_EXT_2"
             displayName = "BitbucketConnectionBefore"
             key = "adfadf"
-            clientSecret = "credentialsJSON:bfc95e8f-9fb6-4020-8903-3125cdcdd446"
+            clientSecret = "credentialsJSON:aea5f48f-9bb1-4ea3-9d00-bd8260b50dcf"
         }
     }
 }
