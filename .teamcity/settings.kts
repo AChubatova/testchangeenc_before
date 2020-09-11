@@ -28,6 +28,7 @@ version = "2020.1"
 project {
 
     buildType(BuildConfig)
+    buildType(ConfigAfter)
 
     features {
         bitbucketCloudConnection {
@@ -49,4 +50,8 @@ object BuildConfig : BuildType({
     vcs {
         root(DslContext.settingsRoot)
     }
+})
+
+object ConfigAfter : BuildType({
+    name = "config_after"
 })
