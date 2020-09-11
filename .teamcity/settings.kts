@@ -65,4 +65,8 @@ object ConfigAfter : BuildType({
 object Template_1 : Template({
     id("Template")
     name = "template"
+
+    params {
+        password("template par", "credentialsJSON:04b27692-afbd-4555-90dc-050dd6689956")
+    }
 })
