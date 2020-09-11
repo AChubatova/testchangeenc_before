@@ -71,6 +71,10 @@ object ConfigAfter : BuildType({
 object SecondeBuildConfigFromTemplate : BuildType({
     templates(Template_1)
     name = "seconde build config from template"
+
+    params {
+        password("parSon", "credentialsJSON:6ddc6bf1-b702-487c-a1be-4c270f20738c")
+    }
 })
 
 object Template_1 : Template({
